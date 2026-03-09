@@ -1,10 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>EK_BornholmDriveService_Book_korsel</title>
+  <link rel="stylesheet" href="/src/main/resources/public/css/stylesheet.css">
 </head>
+
+
 <body>
 
+<header>
+  <div style="padding-left: 80px;">
+    <a href="Index.html">
+      <img src="/src/main/resources/public/images/logoBornholm.jpg" width="30%">
+    </a>
+  </div>
+
+  <nav class="navbar">
+    <ul class="menu">
+      <li><a href="Book_Korsel.html">Book Kørsel</a></li>
+      <li><a href="Opret_korsel.html">Opret Kørsel</a></li>
+      <li><a href="Dine_korsler.html">Se Dine Kørsler</a></li>
+
+      <li class="right"><a href="login.html">Login</a></li>
+      <li><a href="opret.html">Opret Bruger</a></li>
+    </ul>
+    <hr class="menu-divider">
+  </nav>
+</header>
+
+
+<div style="display: flex">
+  <div style="padding-left: 95px;">
+    <h1> Book Kørsel </h1>
+  </div>
+  <div style="width: auto"></div>
+  <div style="margin: auto">
+    <h2>Mulige tider</h2>
+  </div>
+</div>
+
+<p></p>
+
+<div style="display: flex; align-items: flex-start; gap: 20px;">
+  <div style="padding-top: 40px;">
+  </div>
+
+
+  <!-- dropdowns -->
+  <form id="bookForm">
+    <div class="form-container">
+
+      <div class="form-group">
+        <label class="form-label" for="til_fra">Til eller Fra Rønne?</label>
+        <select name="til/fra" id="til_fra" class="form-input">
+          <option value="Til">Til</option>
+          <option value="Fra">Fra</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="select_by">Vælg by</label>
+        <select name="select_by" id="select_by" class="form-input">
+          <option value="Allinge">Allinge</option>
+          <option value="Gudhjem">Gudhjem</option>
+          <option value="Nexø">Nexø</option>
+          <option value="Svanneke">Svanneke</option>
+          <option value="Tejn">Tejn</option>
+        </select>
+      </div>
+      <!--
+
+            <div class="form-group">
+              <label class="form-label" for="day">Dag:</label>
+              <input type="text" id="day" name="day" value="01" class="form-input">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="month">Måned:</label>
+              <input type="text" id="month" name="month" value="januar" class="form-input">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="year">År:</label>
+              <input type="text" id="year" name="year" value="2026" class="form-input">
+            </div>
+            -->
+
+      <div class="form-group">
+        <label class="form-label" for="date">Vælg dato</label>
+        <input type="date" id="date" name="date" class="form-input">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="time">Vælg tid</label>
+        <select name="time" id="time" class="form-input">
+          <option value="07:00">07:00</option>
+          <option value="08:00">08:00</option>
+          <option value="09:00">09:00</option>
+          <option value="10:00">10:00</option>
+          <option value="11:00">11:00</option>
+          <option value="12:00">12:00</option>
+          <option value="13:00">13:00</option>
+          <option value="14:00">14:00</option>
+          <option value="15:00">15:00</option>
+          <option value="16:00">16:00</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="book-btn">Søg</button>
+      </div>
+
+    </div>
+  </form>
+  <!-- tabel -->
+
+
+  <table border="1" class="form-tabelcontainer" id="bookTabel">
+    <thead>
+    <tr>
+      <th>Rønne</th>
+      <th>Valgt by</th>
+      <th>Afgangs tider</th>
+      <th>Dato</th>
+      <th>Book</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--  <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>tid</td>
+      <td>
+        <button class="book-btn">Book</button>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>tid</td>
+      <td>
+        <button class="book-btn">Book</button>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>tid</td>
+      <td>
+        <button class="book-btn">Book</button>
+      </td>
+    </tr>
+    -->
+    </tbody>
+  </table>
+</div>
+
+<script src="/src/main/resources/public/js/script.js"></script>
+
 </body>
+<footer>
+  <div class="navbar footer-content">
+    <hr class="footer-divider"/>
+    <nav>
+      <ul class="menu footer-menu">
+        <li><a href="about.html">Om os</a></li>
+        <li><a href="Contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
 </html>

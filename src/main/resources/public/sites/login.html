@@ -1,10 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>EK_BornholmDriveService/login</title>
+    <link rel="stylesheet" href="/src/main/resources/public/css/stylesheet.css">
 </head>
 <body>
-$END$
+
+<header>
+    <div style="padding-left: 80px;">
+        <a href="Index.html">
+            <img src="/src/main/resources/public/images/logoBornholm.jpg" width="30%">
+        </a>
+    </div>
+
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="Book_Korsel.html">Book Kørsel</a></li>
+            <li><a href="Opret_korsel.html">Opret Kørsel</a></li>
+            <li><a href="Dine_korsler.html">Se Dine Kørsler</a></li>
+
+            <li class="right"><a href="login.html">Login</a></li>
+            <li><a href="opret.html">Opret Bruger</a></li>
+        </ul>
+        <hr class="menu-divider">
+    </nav>
+</header>
+
+<form id="login-form" class="form-container">
+    <div class="form-group">
+        <label for="email" class="form-label">Email:</label>
+        <input type="text" id="email" name="email" value="mail" class="form-input">
+    </div>
+
+    <div class="form-group">
+        <label for="kode" class="form-label">Adgangs kode:</label>
+        <input type="text" id="kode" name="kode" value="Adgangs kode" class="form-input">
+    </div>
+    <input type="submit" value="Submit" class="book-btn">
+</form>
+
+<p id="login-fejl" style="color: red; margin-left: 95px;"></p>
+
+<script src = "/src/main/resources/public/js/scriptLogin.js"></script>
+
+
 </body>
+
+<footer>
+    <div class="navbar footer-content">
+        <hr class="footer-divider"/>
+        <nav>
+            <ul class="menu footer-menu">
+                <li><a href="about.html">Om os</a></li>
+                <li><a href="Contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
 </html>
